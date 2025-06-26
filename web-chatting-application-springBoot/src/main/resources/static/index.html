@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div id="username-page">
+    <div class="username-box">
+        <h2>Welcome!</h2>
+        <form id="usernameForm">
+            <input type="text" id="name" placeholder="Enter your name..." required>
+            <button type="submit">Join Chat</button>
+        </form>
+    </div>
+</div>
+
+<div id="chat-page" class="hidden">
+    <div class="chat-window">
+        <div class="chat-header">Live Chat Room</div>
+        <ul id="messageArea" class="chat-messages"></ul>
+        <form id="messageForm" class="chat-input">
+            <input type="text" id="message" placeholder="Type your message..." autocomplete="off" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
