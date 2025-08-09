@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chat App</title>
+    <title>Simple Chat App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-<div id="username-page">
-    <div class="username-box">
-        <h2>Welcome!</h2>
+
+<div id="username-page" class="center-screen">
+    <div class="card">
+        <h2>Join Chat</h2>
         <form id="usernameForm">
-            <input type="text" id="name" placeholder="Enter your name..." required>
-            <button type="submit">Join Chat</button>
+            <input type="text" id="name" placeholder="Your name..." required>
+            <button type="submit">Enter</button>
         </form>
     </div>
 </div>
 
-<div id="chat-page" class="hidden">
-    <div class="chat-window">
-        <div class="chat-header">Live Chat Room</div>
+<div id="chat-page" class="hidden center-screen">
+    <div class="chat-wrapper">
+        <div class="chat-header">Live Chat</div>
         <ul id="messageArea" class="chat-messages"></ul>
         <form id="messageForm" class="chat-input">
-            <input type="text" id="message" placeholder="Type your message..." autocomplete="off" required>
+            <input type="text" id="message" placeholder="Type a message..." autocomplete="off" required>
             <button type="submit">Send</button>
         </form>
     </div>
